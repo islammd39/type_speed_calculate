@@ -77,6 +77,7 @@ const gameOver = () => {
   display.innerHTML = "";
   // make it inactive
   display.classList.add("inactive");
+  
   // show result
   resultModal.innerHTML += `
     <h1>Finished!</h1>
@@ -135,9 +136,11 @@ displayHistory();
 setInterval(() => {
   const currentTime = new Date().getTime();
   const timeSpent = (currentTime - startTime) / 1000;
-  // console.log();
+  const total = parseInt(startTime ? timeSpent : 0)
+  // console.log(total);
+  
 
 
-  document.getElementById("show-time").innerHTML = `${startTime ? timeSpent : 0} seconds`;
-  // console.log(timeSpent);
+  document.getElementById("show-time").innerHTML = `${total} seconds`;
+  // console.log(startTime ? timeSpent : 0);
 }, 1000);
