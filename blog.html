@@ -14,33 +14,41 @@
             <h2>What is the difference between localstorage and sessionstorage</h2>
             <ul>
                 <li>
-                    Local Storage: This read-only interface property provides access to the Documents local storage
-                    object,
-                    the stored data is stored across browser sessions. Similar to sessionStorage, except that
-                    localStorage
-                    data gets cleared when the page session ends that is when the page is closed. It is cleared when the
-                    last “private” tab of a browser is closed (localStorage data for a document loaded in a private
-                    browsing
-                    or incognito session).
+                    <p>
+                        Local Storage: This read-only interface property provides access to the Documents local storage
+                        object,
+                        the stored data is stored across browser sessions. Similar to sessionStorage, except that
+                        localStorage
+                        data gets cleared when the page session ends that is when the page is closed. It is cleared when
+                        the
+                        last “private” tab of a browser is closed (localStorage data for a document loaded in a private
+                        browsing
+                        or incognito session).
+                    </p>
                 </li>
-                <br>
+
                 <li>
-                    Session Storage: Session Storage objects can be accessed using the sessionStorage read-only
-                    property.
-                    The difference
-                    between sessionStorage and localStorage is that localStorage data does not expire, whereas
-                    sessionStorage data is cleared when the page session ends.
-                    A unique page session gets created once a document is loaded in a browser tab. Page sessions are
-                    valid
-                    for only one tab at a time. Pages are only saved for the amount of time that the tab or the browser
-                    is
-                    open; they do not persist after the page reloads and restores. A new session is created each time a
-                    tab
-                    or window is opened; this is different from session cookies. Each tab/window that is opened with the
-                    same URL creates its own sessionStorage.When you duplicate a tab, the sessionStorage from the
-                    original
-                    tab is copied to the duplicated tab. Closing a window/tab ends the session and clears sessionStorage
-                    objects.
+                    <p> Session Storage: Session Storage objects can be accessed using the sessionStorage read-only
+                        property.
+                        The difference
+                        between sessionStorage and localStorage is that localStorage data does not expire, whereas
+                        sessionStorage data is cleared when the page session ends.
+                        A unique page session gets created once a document is loaded in a browser tab. Page sessions are
+                        valid
+                        for only one tab at a time. Pages are only saved for the amount of time that the tab or the
+                        browser
+                        is
+                        open; they do not persist after the page reloads and restores. A new session is created each
+                        time a
+                        tab
+                        or window is opened; this is different from session cookies. Each tab/window that is opened with
+                        the
+                        same URL creates its own sessionStorage.When you duplicate a tab, the sessionStorage from the
+                        original
+                        tab is copied to the duplicated tab. Closing a window/tab ends the session and clears
+                        sessionStorage
+                        objects.
+                    </p>
                 </li>
             </ul>
         </section>
@@ -53,18 +61,26 @@
             <div>
                 <ul>
                     <li>
-                        The Global scope:
-                        A variable exists inside or outside a block. If a variable is declared outside all functions or
-                        curly
-                        braces ({}), it exists in the global scope. The global variables can be accessed by any line of
-                        code in
-                        the program, including inside blocks.
+                        <p>
+                            The Global scope:
+                            A variable exists inside or outside a block. If a variable is declared outside all functions
+                            or
+                            curly
+                            braces ({}), it exists in the global scope. The global variables can be accessed by any line
+                            of
+                            code in
+                            the program, including inside blocks.
+                        </p>
                     </li>
-                    <br>
+
                     <li>
-                        The Block scope: The main difference between the local scope and block scope is that the block
-                        statements (e.g. if conditions or for loops), don't create a new scope. So the var keyword will
-                        not have an effect, because the variables are still in the same scope.
+                        <p>
+                            The Block scope: The main difference between the local scope and block scope is that the
+                            block
+                            statements (e.g. if conditions or for loops), don't create a new scope. So the var keyword
+                            will
+                            not have an effect, because the variables are still in the same scope.
+                        </p>
                     </li>
                 </ul>
             </div>
@@ -77,10 +93,14 @@
             </div>
             <div>
                 <ul>
-                    <li>The Event Loop has one simple job — to monitor the Call Stack and the Callback Queue. If the
-                        Call Stack is empty, the Event Loop will take the first event from the queue and will push it to
-                        the
-                        Call Stack, which effectively runs it. Such an iteration is called a tick in the Event Loop.
+                    <li>
+                        <p>
+                            The Event Loop has one simple job — to monitor the Call Stack and the Callback Queue. If the
+                            Call Stack is empty, the Event Loop will take the first event from the queue and will push
+                            it to
+                            the Call Stack, which effectively runs it. Such an iteration is called a tick in the Event
+                            Loop.
+                        </p>
                     </li>
                 </ul>
             </div>
