@@ -29,11 +29,11 @@ function displayHistory() {
     const newRow = document.createElement("div");
     newRow.classList.add("card");
     const fix = parseInt(test.timeTaken)
-    // console.log(fix);
+    // console.log(errorCount);
     newRow.innerHTML = `
   <h3>${test.questionText}</h3>
   <p>You took: <span class="bold">${fix}</span> seconds</p>
-    <p>You made <span class="bold red">${test.errorCount}</span> mistakes</p>
+  <p>You made <span class="bold red">${test.errorCount}</span> mistakes</p>
   `;
 
     histories.appendChild(newRow);
